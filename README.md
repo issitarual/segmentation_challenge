@@ -14,7 +14,6 @@ This project implements an API for image segmentation, capable of detecting and 
 ### Future improvements 🔮
 - [ ] Post-processing to refine boundaries
 - [ ] Improve segmentation with ML-based approaches
-- [ ] Add Swagger documentation improvements
 - [ ] Add unit and integration tests
 
 ## Technologies
@@ -30,3 +29,20 @@ The following tools and frameworks were used in the construction of the project:
 1. Clone this repository
 ```bash
 git clone https://github.com/[your-username]/lumina_lab.git
+```
+2. Navigate to the project directory
+```bash
+cd lumina_lab
+```
+3. Build the Docker image
+```bash
+docker build -t lumina-lab-segmentation .
+```
+4. Run the Docker container
+```bash
+docker run -it --rm -p 8000:8000 lumina-lab-segmentation
+```
+5. Access the API
+```bash
+http://localhost:8000/segmentation/segment/
+```
